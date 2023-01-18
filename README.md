@@ -147,12 +147,6 @@ To get a local copy up and running follow these simple example steps.
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/wzhcoder/SOTA-of-P300-Detection-in-BCI-Competitions-II-III.svg?style=for-the-badge
