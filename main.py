@@ -10,8 +10,15 @@ Created on Sat Nov 19 15:28:02 2022
 import sys
 import os
 import torch
-sys.path.insert(0, 'H:\wzh\p300_new\mycode\P300_detection')
+
+'''
+chage src_path and root.
+root is the path of the location of the datasets 
+'''
+src_path = 'H:\wzh\p300_new\mycode\P300_detection'
 root = 'H:\\wzh\\p300_new\\dataset\\BCI IIb & III'
+sys.path.insert(0, src_path)
+
 
 #%%
 
