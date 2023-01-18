@@ -35,18 +35,17 @@
   </a>
 
 <h3 align="center">SOTA of P300 Detection in BCI competition II, III</h3>
-
+<!-- PROJECT LOGO -->
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/wzhcoder/SOTA-of-P300-Detection-in-BCI-Competitions-II-III"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
+    <a href="https://github.com/wzhcoder/SOTA-of-P300-Detection-in-BCI-Competitions-II-III">
+    <strong>
+    </strong>
     <a href="https://github.com/wzhcoder/SOTA-of-P300-Detection-in-BCI-Competitions-II-III">View Demo</a>
     ·
     <a href="https://github.com/wzhcoder/SOTA-of-P300-Detection-in-BCI-Competitions-II-III/issues">Report Bug</a>
     ·
     <a href="https://github.com/wzhcoder/SOTA-of-P300-Detection-in-BCI-Competitions-II-III/issues">Request Feature</a>
+    <br />
   </p>
 </div>
 
