@@ -114,7 +114,7 @@ for model_type in model_type_list:
 
         for mixup in [[True, 0.2], [True, 0.4], [True, 0.6], [True, 0.8]]:
 
-
+            
             torch.manual_seed(seed)
             weight = torch.as_tensor(sample_weight(data['train'][1]), dtype = torch.float32)
             C, T = get_CT(dataloader['train'])
