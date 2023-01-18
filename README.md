@@ -124,7 +124,11 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ### Usage
 1. Change src_path and root in main.py
-2. Run main.py in console.
+2. run visdom in console.
+```sh
+   visdom
+```
+3. Run main.py in console.
 ```sh
    python main.py
 ```
