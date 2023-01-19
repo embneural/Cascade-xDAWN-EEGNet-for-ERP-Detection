@@ -143,7 +143,7 @@ To get a local copy up and running follow these simple example steps.
 
 <!-- CONTRIBUTING -->
 ## Results
-![Xdawn + EEGNet](images/orignial/cat.svg)
+![Xdawn + EEGNet](images/orignial/cat.png)
 
 <!-- LICENSE -->
 ## License
