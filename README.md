@@ -124,11 +124,11 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ### Usage
 1. Change src_path and root in main.py
-2. run visdom in console.
+2. run visdom in the console.
 ```sh
    visdom
 ```
-3. Run main.py in console.
+3. Run main.py in the console.
 ```sh
    python main.py
 ```
@@ -143,7 +143,7 @@ To get a local copy up and running follow these simple example steps.
 
 <!-- CONTRIBUTING -->
 ## Results
-
+![Xdawn + EEGNet](images/orignial/cat.svg)
 
 <!-- LICENSE -->
 ## License
