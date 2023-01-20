@@ -136,7 +136,7 @@ To get a local copy up and running follow these simple example steps.
 
 <!-- CONTRIBUTING -->
 ## Results
-Using [Improved EEGNet]((https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007)), i.e. xdawn with EEGNet.
+Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet.
 
 ![Xdawn + EEGNet](images/orignial/cat.png)
 
