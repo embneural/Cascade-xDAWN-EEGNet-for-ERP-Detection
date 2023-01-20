@@ -327,6 +327,15 @@ Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.
 
 
 
+## Further reading
+.
+.
+.
+.
+.
+.
+
+
 <!-- LICENSE -->
 ## License
 
