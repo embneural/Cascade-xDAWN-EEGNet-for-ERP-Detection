@@ -158,12 +158,14 @@ Note, Those papers 8, 9 and 10 did not provide the results of P300 detection. I 
 <!-- CONTRIBUTING -->
 ## Results
 ### Symbol Accuracy
-ASUR (i.e., average symbols under repetitions) was adopted to compare symbol accuracy. 
+$\text{ASUR}$ (i.e., average symbols under repetitions) was adopted to compare symbol accuracy. 
 
-![Alt text](images/asur.png)
+$$\text{ASUR}_{k} = \frac{1}{k}\sum_{i=1}^{k}{C_i}$$
 
-
-For more information about the ASUR, please refer to [ST-CapsNet: Linking Spatial and Temporal Attention with Capsule Network for P300 Detection Improvement](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10018278).
+where $C_i$ means the correctly recognized symbols in the $i$-th
+repetition (there are 15 repetitions in total). $\text{ASUR}_{k}$ stands for the average correctly recognized
+symbols per repetition when we take $k$ repetitions into account.
+For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linking Spatial and Temporal Attention with Capsule Network for P300 Detection Improvement](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10018278).
 <div class="center">
 <table>
 <thead>
