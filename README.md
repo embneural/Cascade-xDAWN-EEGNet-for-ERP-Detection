@@ -148,7 +148,6 @@ for EEG-based Brain-Computer Interfaces](https://arxiv.org/pdf/1611.08024.pdf).
 10. **DeepConvNet**. Paper link: [Deep Learning With Convolutional Neural
 Networks for EEG Decoding and Visualization](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.23730).
 
-Note, Those papers 8, 9 and 10 did not provide the results of P300 detection. I implemented and run those models to get the P300 detection results in BCI competitions II and III.
 
 <!-- CONTRIBUTING -->
 ## Results
@@ -280,7 +279,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <th>30.5</th>
   </tr>
   <tr>
-    <td>EEGNet</td>
+    <td>EEGNet*</td>
     <td>45.6</td>
     <td>63.1</td>
     <td>73.3</td>
@@ -292,7 +291,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>30.2</td>
   </tr>
   <tr>
-    <td>Improved EEGNet</td>
+    <td>Improved EEGNet*</td>
     <td>48.2</td>
     <td>64.8</td>
     <td>75.4</td>
@@ -304,7 +303,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>30.1</td>
   </tr>
   <tr>
-    <td>DeepConvNet</td>
+    <td>DeepConvNet*</td>
     <td>45.2</td>
     <td>63.6</td>
     <td>73.3</td>
@@ -319,7 +318,13 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
 </table>
 </div>
 
-The number of xdawn spatial filters of Improved EEGNet in this table was chosen to be 8.
+
+Note
+
+In the original papers (EEGNet, Improved EEGNet and DeepConvNet), the authors did not provide the results of P300 detection. I implemented them and run those models to get the P300 detection results in BCI competitions II and III. The number of xdawn spatial filters of Improved EEGNet in this table was chosen to be 8.
+
+
+
 
 ### Effect of xdawn number on ASUR
 Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet. Note, the results of the figure below were obtained without a fixed random seed.
