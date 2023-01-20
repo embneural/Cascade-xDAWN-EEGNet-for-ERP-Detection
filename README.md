@@ -112,11 +112,12 @@ To get a local copy up and running follow these simple example steps.
 ### Prepare Datasets
 1. Download [Data set IIb: ‹P300 speller paradigm›](https://www.bbci.de/competition/ii/) and [Data set II: ‹P300 speller paradigm›](https://www.bbci.de/competition/iii/). Dataset IIb only contains one subject, while dataset II has two subjects (A and B).
 2. Download the true label of tests sets of [dataset IIa](https://www.bbci.de/competition/ii/results/labels_data_set_iib.txt) and the true label of tests sets of dataset II ( [A](https://www.bbci.de/competition/iii/results/albany/true_labels_a.txt) and [B](https://www.bbci.de/competition/iii/results/albany/true_labels_b.txt)). I have downloaded those labels of test sets and put them in the [folder](dataset_labels).
-3. put those true labels into the root directory of the downloaded dataset, respectively.
+3. Put those true labels into the root directory of the downloaded dataset, respectively.
 
 ### Requriments
 - pytorch
 - mne
+- pyriemann
 - sklearn
 - visdom
 
@@ -124,7 +125,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ### Usage
 1. Change src_path and root in main.py
-2. run visdom in the console.
+2. Run visdom in the console.
 ```sh
    visdom
 ```
@@ -137,7 +138,7 @@ To get a local copy up and running follow these simple example steps.
 ## Methods
 1. **ESVMs**. Paper link: [P300 Detection using Ensemble of SVM for
 Brain-Computer Interface Application](http://dspace.nitrkl.ac.in:8080/dspace/bitstream/2080/3022/1/2018_ICCNT_SKundu_P300.pdf).
-2. **CNN-1** and MCNN-1. Paper link: [Convolutional neural networks for P300 detection with application to brain-computer interfaces](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf). 
+2. **CNN-1** and MCNN-1. Paper link: [Convolutional neural networks for P300 detection with application to brain-computer interfaces](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
 3. **OLCNN**. Paper link: [A Simple Convolutional Neural Network
 for Accurate P300 Detection and Character Spelling
 in Brain Computer Interface](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
@@ -192,8 +193,8 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>ESVMs</td>
     <td>47.8</td>
     <td>64.6</td>
-    <td>75</td>
-    <td>65</td>
+    <td>75.0</td>
+    <td>65.0</td>
     <td>77.4</td>
     <td>83.7</td>
     <td>28.6</td>
@@ -203,7 +204,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
   <tr>
     <td>CNN-1</td>
     <td>41.8</td>
-    <td>60</td>
+    <td>60.0</td>
     <td>70.8</td>
     <td>58.6</td>
     <td>72.8</td>
@@ -232,8 +233,8 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>68.6</td>
     <td>80.2</td>
     <td>85.9</td>
-    <td>29</td>
-    <td>30</td>
+    <td>29.0</td>
+    <td>30.0</td>
     <td>30.3</td>
   </tr>
   <tr>
@@ -241,7 +242,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <th>51.8</th>
     <td>66.2</td>
     <td>75.4</td>
-    <td>65</td>
+    <td>65.0</td>
     <td>77.1</td>
     <td>82.9</td>
     <td>26.2</td>
@@ -253,7 +254,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>45.8</td>
     <td>63.2</td>
     <td>73.7</td>
-    <td>65</td>
+    <td>65.0</td>
     <td>77.1</td>
     <td>82.9</td>
     <td>28.4</td>
@@ -267,7 +268,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>71.3</td>
     <td>63.8</td>
     <td>77.6</td>
-    <td>84</td>
+    <td>84.0</td>
     <td>29.4</td>
     <td>30.2</td>
     <td>30.4</td>
@@ -276,7 +277,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>ST-CapsNet</td>
     <td>45.2</td>
     <td>64.4</td>
-    <td>74</td>
+    <td>74.0</td>
     <td>66.2</td>
     <td>78.5</td>
     <td>84.3</td>
@@ -324,7 +325,9 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
 </table>
 </div>
 
+The number of xdawn spatial filters of Improved EEGNet in this table was chosen to be 8.
 
+### Effect of xdawn number on ASUR
 Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet.
 ![Xdawn + EEGNet](images/orignial/cat.png)
 
