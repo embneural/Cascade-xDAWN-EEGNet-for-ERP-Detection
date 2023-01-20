@@ -161,7 +161,166 @@ Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.
 
 ![Xdawn + EEGNet](images/orignial/cat.png)
 
-<table><thead><tr><th rowspan="2">Model</th><th colspan="3">ASUR of II-A</th><th colspan="3">ASUR of II-B</th><th colspan="3">ASUR of IIb</th></tr><tr><th>5</th><th>10</th><th>15</th><th>5</th><th>10</th><th>15</th><th>5</th><th>10</th><th>15</th></tr></thead><tbody><tr><td>ESVMs</td><td>47.8</td><td>64.6</td><td>75</td><td>65</td><td>77.4</td><td>83.7</td><td>28.6</td><td>30.2</td><td>30.2</td></tr><tr><td>CNN-1</td><td>41.8</td><td>60</td><td>70.8</td><td>58.6</td><td>72.8</td><td>78.9</td><td>-</td><td>-</td><td>-</td></tr><tr><td>MCNN-1</td><td>42.8</td><td>59.5</td><td>70.5</td><td>59.4</td><td>73.7</td><td>80.7</td><td>-</td><td>-</td><td>-</td></tr><tr><td>OLCNN</td><td>50.8</td><td>68.1</td><td>77.3</td><td>68.6</td><td>80.2</td><td>85.9</td><td>29</td><td>30</td><td>30.3</td></tr><tr><td>BN3</td><td>51.8</td><td>66.2</td><td>75.4</td><td>65</td><td>77.1</td><td>82.9</td><td>26.2</td><td>28.3</td><td>29.2</td></tr><tr><td>ERP-CapsNet</td><td>45.8</td><td>63.2</td><td>73.7</td><td>65</td><td>77.1</td><td>82.9</td><td>28.4</td><td>29.7</td><td>30.1</td></tr><tr><td>MsCNN-TL-ESVM</td><td>43.6</td><td>60.9</td><td>71.3</td><td>63.8</td><td>77.6</td><td>84</td><td>29.4</td><td>30.2</td><td>30.4</td></tr><tr><td>ST-CapsNet</td><td>45.2</td><td>64.4</td><td>74</td><td>66.2</td><td>78.5</td><td>84.3</td><td>29.6</td><td>30.3</td><td>30.5</td></tr><tr><td>EEGNet</td><td>45.6</td><td>63.1</td><td>73.3</td><td>63.8</td><td>78.2</td><td>84.4</td><td>29.8</td><td>29.8</td><td>30.2</td></tr><tr><td>Improved EEGNet</td><td>48.2</td><td>64.8</td><td>75.4</td><td>70.6</td><td>81.6</td><td>86.3</td><td>28.2</td><td>29.6</td><td>30.1</td></tr><tr><td>DeepConvNet</td><td>45.2</td><td>63.6</td><td>73.3</td><td>70.4</td><td>82.9</td><td>88.1</td><td>29.2</td><td>30.1</td><td>30.4</td></tr></tbody></table>
+
+<div class="center">
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Model</th>
+    <th colspan="3">ASUR of II-A</th>
+    <th colspan="3">ASUR of II-B</th>
+    <th colspan="3">ASUR of IIb</th>
+  </tr>
+  <tr>
+    <th>5</th>
+    <th>10</th>
+    <th>15</th>
+    <th>5</th>
+    <th>10</th>
+    <th>15</th>
+    <th>5</th>
+    <th>10</th>
+    <th>15</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>ESVMs</td>
+    <td>47.8</td>
+    <td>64.6</td>
+    <td>75</td>
+    <td>65</td>
+    <td>77.4</td>
+    <td>83.7</td>
+    <td>28.6</td>
+    <td>30.2</td>
+    <td>30.2</td>
+  </tr>
+  <tr>
+    <td>CNN-1</td>
+    <td>41.8</td>
+    <td>60</td>
+    <td>70.8</td>
+    <td>58.6</td>
+    <td>72.8</td>
+    <td>78.9</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>MCNN-1</td>
+    <td>42.8</td>
+    <td>59.5</td>
+    <td>70.5</td>
+    <td>59.4</td>
+    <td>73.7</td>
+    <td>80.7</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>OLCNN</td>
+    <td>50.8</td>
+    <th>68.1</th>
+    <th>77.3</th>
+    <td>68.6</td>
+    <td>80.2</td>
+    <td>85.9</td>
+    <td>29</td>
+    <td>30</td>
+    <td>30.3</td>
+  </tr>
+  <tr>
+    <td>BN3</td>
+    <th>51.8</th>
+    <td>66.2</td>
+    <td>75.4</td>
+    <td>65</td>
+    <td>77.1</td>
+    <td>82.9</td>
+    <td>26.2</td>
+    <td>28.3</td>
+    <td>29.2</td>
+  </tr>
+  <tr>
+    <td>ERP-CapsNet</td>
+    <td>45.8</td>
+    <td>63.2</td>
+    <td>73.7</td>
+    <td>65</td>
+    <td>77.1</td>
+    <td>82.9</td>
+    <td>28.4</td>
+    <td>29.7</td>
+    <td>30.1</td>
+  </tr>
+  <tr>
+    <td>MsCNN-TL-ESVM</td>
+    <td>43.6</td>
+    <td>60.9</td>
+    <td>71.3</td>
+    <td>63.8</td>
+    <td>77.6</td>
+    <td>84</td>
+    <td>29.4</td>
+    <td>30.2</td>
+    <td>30.4</td>
+  </tr>
+  <tr>
+    <td>ST-CapsNet</td>
+    <td>45.2</td>
+    <td>64.4</td>
+    <td>74</td>
+    <td>66.2</td>
+    <td>78.5</td>
+    <td>84.3</td>
+    <td>29.6</td>
+    <th>30.3</th>
+    <th>30.5</th>
+  </tr>
+  <tr>
+    <td>EEGNet</td>
+    <td>45.6</td>
+    <td>63.1</td>
+    <td>73.3</td>
+    <td>63.8</td>
+    <td>78.2</td>
+    <td>84.4</td>
+    <th>29.8</th>
+    <td>29.8</td>
+    <td>30.2</td>
+  </tr>
+  <tr>
+    <td>Improved EEGNet</td>
+    <td>48.2</td>
+    <td>64.8</td>
+    <td>75.4</td>
+    <th>70.6</th>
+    <td>81.6</td>
+    <td>86.3</td>
+    <td>28.2</td>
+    <td>29.6</td>
+    <td>30.1</td>
+  </tr>
+  <tr>
+    <td>DeepConvNet</td>
+    <td>45.2</td>
+    <td>63.6</td>
+    <td>73.3</td>
+    <td>70.4</td>
+    <th>82.9</th>
+    <th>88.1</th>
+    <td>29.2</td>
+    <td>30.1</td>
+    <td>30.4</td>
+  </tr>
+</tbody>
+</table>
+
+</div>
 
 
 
