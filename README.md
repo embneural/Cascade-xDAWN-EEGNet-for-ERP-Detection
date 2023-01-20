@@ -99,7 +99,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project ( still updating )
-This project aims to provide a simple general framework to help beginners who are struggling to achieve the state of the art of p300 detection in [BCI competitions II and III](https://www.bbci.de/competition/). Two of the most popular deep learning models( i.e., EEGNet, DeepConvNet) and [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007) (which won second place on the with-subject RSVP paradigm in WRC 2021) are adopted to serve as the base models for this project.
+This project aims to provide a simple general framework to help beginners who are struggling to achieve the state of the art of p300 detection in [BCI competitions II and III](https://www.bbci.de/competition/). Two of the most popular deep learning models( i.e., EEGNet, DeepConvNet) and [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007) (which won second place on the within-subject RSVP paradigm in WRC 2021) are adopted to serve as the base models for this project.
 
 <!-- GETTING STARTED -->
 ## Getting Started
