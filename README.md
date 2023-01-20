@@ -99,16 +99,10 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project ( still updating )
-This project aims to provide a simple general framework to help beginners who are struggling to achieve the state of the art of p300 detection in [BCI competitions II and III](https://www.bbci.de/competition/).
-
+This project aims to provide a simple general framework to help beginners who are struggling to achieve the state of the art of p300 detection in [BCI competitions II and III](https://www.bbci.de/competition/). Two of the most popular deep learning models( i.e., EEGNet, DeepConvNet) and [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007) (which won second place on the with-subject RSVP paradigm in WRC 2021) are adopted to serve as the base models for this project.
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-
 ### Prepare Datasets
 1. Download [Data set IIb: ‹P300 speller paradigm›](https://www.bbci.de/competition/ii/) and [Data set II: ‹P300 speller paradigm›](https://www.bbci.de/competition/iii/). Dataset IIb only contains one subject, while dataset II has two subjects (A and B).
 2. Download the true label of tests sets of [dataset IIa](https://www.bbci.de/competition/ii/results/labels_data_set_iib.txt) and the true label of tests sets of dataset II ( [A](https://www.bbci.de/competition/iii/results/albany/true_labels_a.txt) and [B](https://www.bbci.de/competition/iii/results/albany/true_labels_b.txt)). I have downloaded those labels of test sets and put them in the [folder](dataset_labels).
@@ -328,7 +322,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
 The number of xdawn spatial filters of Improved EEGNet in this table was chosen to be 8.
 
 ### Effect of xdawn number on ASUR
-Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet.
+Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet. Note, the results of the figure below were obtained without a fixed random seed.
 ![Xdawn + EEGNet](images/orignial/cat.png)
 
 
