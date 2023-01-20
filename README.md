@@ -134,16 +134,54 @@ To get a local copy up and running follow these simple example steps.
 ```
 
 
-
-
-
-
-
-
-
 <!-- CONTRIBUTING -->
 ## Results
+Using [Improved EEGNet]((https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007)), i.e. xdawn with EEGNet.
+
 ![Xdawn + EEGNet](images/orignial/cat.png)
+
+
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Model</th>
+    <th colspan="3">ASUR of II-A</th>
+    <th colspan="3">ASUR of II-B</th>
+    <th colspan="3">ASUR of IIb</th>
+  </tr>
+  <tr>
+    <th>5</th>
+    <th>10</th>
+    <th>15</th>
+    <th>5</th>
+    <th>10</th>
+    <th>15</th>
+    <th>5</th>
+    <th>10</th>
+    <th>15</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
 
 <!-- LICENSE -->
 ## License
