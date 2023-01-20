@@ -153,17 +153,18 @@ for EEG-based Brain-Computer Interfaces](https://arxiv.org/pdf/1611.08024.pdf).
 10. **DeepConvNet**. Paper link: [Deep Learning With Convolutional Neural
 Networks for EEG Decoding and Visualization](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.23730).
 
-Note, Those papers in 8, 9, 10 did not provide the results of P300 detection. I implemented and run those models to get the P300 detection results in BCI competition II and III.
+Note, Those papers 8, 9 and 10 did not provide the results of P300 detection. I implemented and run those models to get the P300 detection results in BCI competitions II and III.
 
 <!-- CONTRIBUTING -->
 ## Results
-Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet.
+### Symbol Accuracy
+ASUR (i.e., average symbols under repetitions) was adopted to compare symbol accuracy. 
 
-![Xdawn + EEGNet](images/orignial/cat.png)
+![Alt text](images/asur.png)
 
 
+For more information about the ASUR, please refer to [ST-CapsNet: Linking Spatial and Temporal Attention with Capsule Network for P300 Detection Improvement](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10018278).
 <div class="center">
-
 <table>
 <thead>
   <tr>
@@ -319,9 +320,11 @@ Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.
   </tr>
 </tbody>
 </table>
-
 </div>
 
+
+Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet.
+![Xdawn + EEGNet](images/orignial/cat.png)
 
 
 
