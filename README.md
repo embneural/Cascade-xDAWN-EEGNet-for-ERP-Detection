@@ -98,7 +98,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 -->
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project ( still updating )
 This project aims to provide a simple general framework to help beginners who are struggling to achieve the state of the art of p300 detection in [BCI competitions II and III](https://www.bbci.de/competition/).
 
 
