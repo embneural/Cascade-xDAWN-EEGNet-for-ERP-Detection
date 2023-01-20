@@ -161,11 +161,171 @@ Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.
 
 ![Xdawn + EEGNet](images/orignial/cat.png)
 
-<div align="center">
-
-</div>
-
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-pb0m{border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-9wq8" rowspan="2">Model</th>
+    <th class="tg-9wq8" colspan="3">ASUR of II-A</th>
+    <th class="tg-9wq8" colspan="3">ASUR of II-B</th>
+    <th class="tg-9wq8" colspan="3">ASUR of IIb</th>
+  </tr>
+  <tr>
+    <th class="tg-9wq8">5</th>
+    <th class="tg-9wq8">10</th>
+    <th class="tg-9wq8">15</th>
+    <th class="tg-9wq8">5</th>
+    <th class="tg-9wq8">10</th>
+    <th class="tg-9wq8">15</th>
+    <th class="tg-9wq8">5</th>
+    <th class="tg-9wq8">10</th>
+    <th class="tg-9wq8">15</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-9wq8">ESVMs</td>
+    <td class="tg-9wq8">47.8</td>
+    <td class="tg-9wq8">64.6</td>
+    <td class="tg-9wq8">75</td>
+    <td class="tg-9wq8">65</td>
+    <td class="tg-9wq8">77.4</td>
+    <td class="tg-9wq8">83.7</td>
+    <td class="tg-9wq8">28.6</td>
+    <td class="tg-9wq8">30.2</td>
+    <td class="tg-9wq8">30.2</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">CNN-1</td>
+    <td class="tg-9wq8">41.8</td>
+    <td class="tg-9wq8">60</td>
+    <td class="tg-9wq8">70.8</td>
+    <td class="tg-9wq8">58.6</td>
+    <td class="tg-9wq8">72.8</td>
+    <td class="tg-9wq8">78.9</td>
+    <td class="tg-9wq8">-</td>
+    <td class="tg-9wq8">-</td>
+    <td class="tg-9wq8">-</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">MCNN-1</td>
+    <td class="tg-9wq8">42.8</td>
+    <td class="tg-9wq8">59.5</td>
+    <td class="tg-9wq8">70.5</td>
+    <td class="tg-9wq8">59.4</td>
+    <td class="tg-9wq8">73.7</td>
+    <td class="tg-9wq8">80.7</td>
+    <td class="tg-9wq8">-</td>
+    <td class="tg-9wq8">-</td>
+    <td class="tg-9wq8">-</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">OLCNN</td>
+    <td class="tg-9wq8">50.8</td>
+    <td class="tg-uzvj">68.1</td>
+    <td class="tg-uzvj">77.3</td>
+    <td class="tg-9wq8">68.6</td>
+    <td class="tg-9wq8">80.2</td>
+    <td class="tg-9wq8">85.9</td>
+    <td class="tg-9wq8">29</td>
+    <td class="tg-9wq8">30</td>
+    <td class="tg-9wq8">30.3</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">BN3</td>
+    <td class="tg-uzvj">51.8</td>
+    <td class="tg-9wq8">66.2</td>
+    <td class="tg-9wq8">75.4</td>
+    <td class="tg-9wq8">65</td>
+    <td class="tg-9wq8">77.1</td>
+    <td class="tg-9wq8">82.9</td>
+    <td class="tg-9wq8">26.2</td>
+    <td class="tg-9wq8">28.3</td>
+    <td class="tg-9wq8">29.2</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">ERP-CapsNet</td>
+    <td class="tg-9wq8">45.8</td>
+    <td class="tg-9wq8">63.2</td>
+    <td class="tg-9wq8">73.7</td>
+    <td class="tg-9wq8">65</td>
+    <td class="tg-9wq8">77.1</td>
+    <td class="tg-9wq8">82.9</td>
+    <td class="tg-9wq8">28.4</td>
+    <td class="tg-9wq8">29.7</td>
+    <td class="tg-9wq8">30.1</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">MsCNN-TL-ESVM</td>
+    <td class="tg-9wq8">43.6</td>
+    <td class="tg-9wq8">60.9</td>
+    <td class="tg-9wq8">71.3</td>
+    <td class="tg-9wq8">63.8</td>
+    <td class="tg-9wq8">77.6</td>
+    <td class="tg-9wq8">84</td>
+    <td class="tg-9wq8">29.4</td>
+    <td class="tg-9wq8">30.2</td>
+    <td class="tg-9wq8">30.4</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">ST-CapsNet</td>
+    <td class="tg-pb0m">45.2</td>
+    <td class="tg-pb0m">64.4</td>
+    <td class="tg-pb0m">74</td>
+    <td class="tg-pb0m">66.2</td>
+    <td class="tg-pb0m">78.5</td>
+    <td class="tg-pb0m">84.3</td>
+    <td class="tg-9wq8">29.6</td>
+    <td class="tg-uzvj">30.3</td>
+    <td class="tg-uzvj">30.5</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">EEGNet</td>
+    <td class="tg-9wq8">45.6</td>
+    <td class="tg-9wq8">63.1</td>
+    <td class="tg-9wq8">73.3</td>
+    <td class="tg-9wq8">63.8</td>
+    <td class="tg-9wq8">78.2</td>
+    <td class="tg-9wq8">84.4</td>
+    <td class="tg-uzvj">29.8</td>
+    <td class="tg-9wq8">29.8</td>
+    <td class="tg-9wq8">30.2</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">Improved EEGNet</td>
+    <td class="tg-9wq8">48.2</td>
+    <td class="tg-9wq8">64.8</td>
+    <td class="tg-9wq8">75.4</td>
+    <td class="tg-uzvj">70.6</td>
+    <td class="tg-9wq8">81.6</td>
+    <td class="tg-9wq8">86.3</td>
+    <td class="tg-9wq8">28.2</td>
+    <td class="tg-9wq8">29.6</td>
+    <td class="tg-9wq8">30.1</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">DeepConvNet</td>
+    <td class="tg-9wq8">45.2</td>
+    <td class="tg-9wq8">63.6</td>
+    <td class="tg-9wq8">73.3</td>
+    <td class="tg-9wq8">70.4</td>
+    <td class="tg-uzvj">82.9</td>
+    <td class="tg-uzvj">88.1</td>
+    <td class="tg-9wq8">29.2</td>
+    <td class="tg-9wq8">30.1</td>
+    <td class="tg-9wq8">30.4</td>
+  </tr>
+</tbody>
+</table>
 
 
 
