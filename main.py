@@ -42,7 +42,7 @@ focal_gamma = 2; lr = 1e-3; weight_decay = 0
 early_type = 'loss';  patience = 20; max_epoch = 80;
 event_dict = BCI_II_III.event_dict
 save_path = None
-
+mixup = [False, 0] # [True, 0.2], [True, 0.3], [True, 0.4]
 model_type_list = [  
                     'xdawn_8_eegnet', 'xdawn_8_deepconvnet', 
                     # 'eegnet', 'deepconvnet',
@@ -84,26 +84,25 @@ for model_type in model_type_list:
         '''
         Traning
         '''
-        for mixup in [[True, 0.2], [True, 0.4], [True, 0.6], [True, 0.8]]:
-            torch.manual_seed(seed)
-            weight = torch.as_tensor(sample_weight(data['train'][1]), dtype = torch.float32)
-            C, T = get_CT(dataloader['train'])
+        torch.manual_seed(seed)
+        weight = torch.as_tensor(sample_weight(data['train'][1]), dtype = torch.float32)
+        C, T = get_CT(dataloader['train'])
 
-            if 'eegnet' in model_type:
-                model  = EEGNet(8, 2, C, T, 0.25, N = 2, filter_len = 64).to(device)
-            elif 'deepconvnet' in model_type:
-                model = DeepConvNet(C, T,  5, 0.5, N = 2, pool_type = 'maxpool').to(device)
+        if 'eegnet' in model_type:
+            model  = EEGNet(8, 2, C, T, 0.25, N = 2, filter_len = 64).to(device)
+        elif 'deepconvnet' in model_type:
+            model = DeepConvNet(C, T,  5, 0.5, N = 2, pool_type = 'maxpool').to(device)
 
-            loss_fn        = [FocalLoss(weight.to(device), focal_gamma), 
-                            FocalLoss(weight.to(device), 0)]
-            # optimizer      = torch.optim.Adam(model.parameters(),lr = lr, weight_decay= weight_decay)  ##使用Adam优化器
-            optimizer      = torch.optim.RAdam(model.parameters(),lr = lr, weight_decay= weight_decay)  ##使用Adam优化器        
-            scheduler      = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma = 1); 
-            optimizer = [optimizer]; scheduler = [scheduler]
-            vis_name = s_id + '_' + model_type + '_' + str( mixup[1] )
-            tr = BCI_II_III.BCI_II_III_Training(vis_name, model, loss_fn, optimizer, scheduler, event_dict, device,
-                        early_type, patience, max_epoch, save_path,
-                        mixup,
-                        )
-            tr.early_stop(dataloader, (recognize_data, stimulate_code, valid_label))    
-            tr.vis.save([vis_name])
+        loss_fn        = [FocalLoss(weight.to(device), focal_gamma), 
+                        FocalLoss(weight.to(device), 0)]
+        # optimizer      = torch.optim.Adam(model.parameters(),lr = lr, weight_decay= weight_decay)  ##使用Adam优化器
+        optimizer      = torch.optim.RAdam(model.parameters(),lr = lr, weight_decay= weight_decay)  ##使用Adam优化器        
+        scheduler      = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma = 1); 
+        optimizer = [optimizer]; scheduler = [scheduler]
+        vis_name = s_id + '_' + model_type + '_' + str( mixup[1] )
+        tr = BCI_II_III.BCI_II_III_Training(vis_name, model, loss_fn, optimizer, scheduler, event_dict, device,
+                    early_type, patience, max_epoch, save_path,
+                    mixup,
+                    )
+        tr.early_stop(dataloader, (recognize_data, stimulate_code, valid_label))    
+        tr.vis.save([vis_name])
