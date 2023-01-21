@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/wzhcoder/SOTA-of-P300-Detection-in-BCI-Competitions-II-III">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">SOTA of P300 Detection in BCI competition II, III</h3>
@@ -328,7 +328,7 @@ In the original papers (EEGNet, Improved EEGNet and DeepConvNet), the authors di
 
 ### Effect of xdawn number on ASUR
 Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet. Note, the results of the figure below were obtained without a fixed random seed.
-![Xdawn + EEGNet](images/orignial/cat.png)
+![Xdawn + EEGNet](result/without_fixed_seed/Improved%20EEGNet/cat.png)
 
 
 
@@ -337,11 +337,11 @@ The softmax with temperature $t$ was used to get the probability of the model's 
 $$p_{i} = \frac{exp(z_{i}/t)}{\sum_{j}{exp(z_{j}/t)}}$$
 To show the effect of temperature to the symbol accuarcy, the Improved EEGNet(with 8 xdawn spatial filters) was run on dataset II-A, II-B and IIb and the reuslts were placed in [folder](/result/with_fixed_seed_0/).
 ### Dataset II-A
-![Alt text](images/A.PNG)
+![Alt text](result/with_fixed_seed_0/mixup_False/A.PNG)
 ### Dataset II-B
-![Alt text](images/B.PNG)
+![Alt text](result/with_fixed_seed_0/mixup_False/B.PNG)
 ### Dataset IIb
-![Alt text](images/C.PNG)
+![Alt text](result/with_fixed_seed_0/mixup_False/C.PNG)
 
 <!-- LICENSE -->
 ## License
