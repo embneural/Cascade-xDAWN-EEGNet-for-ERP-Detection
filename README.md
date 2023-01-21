@@ -339,13 +339,40 @@ Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.
 .
 .
 .
-
+waiting to be updated
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
+
+## Citation
+For Improved EEGNet model:
+```sh
+@article{zhang2022improved,
+  title={An improved EEGNet for single-trial EEG classification in rapid serial visual presentation task},
+  author={Zhang, Hongfei and Wang, Zehui and Yu, Yinhu and Yin, Haojun and Chen, Chuangquan and Wang, Hongtao},
+  journal={Brain Science Advances},
+  volume={8},
+  number={2},
+  pages={111--126},
+  year={2022},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+```
+For new comparison metric: $\text{ASUR}$
+```sh
+@ARTICLE{10018278,
+  author={Wang, Zehui and Chen, Chuangquan and Li, Junhua and Wan, Feng and Sun, Yu and Wang, Hongtao},
+  journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering}, 
+  title={ST-CapsNet: Linking Spatial and Temporal Attention with Capsule Network for P300 Detection Improvement}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TNSRE.2023.3237319}}
+```
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
