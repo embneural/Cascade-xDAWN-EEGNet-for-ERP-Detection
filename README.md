@@ -336,6 +336,7 @@ Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.
 The softmax with temperature $t$ was used to get the probability of the model's output logits in this project. The larger $t$ is, the lower the confidence level of the model and the smoother the output.
 $$p_{i} = \frac{exp(z_{i}/t)}{\sum_{j}{exp(z_{j}/t)}}$$
 
+The following pictures are the reulst of Improved EEGNet with 8 xdawn spatial filters with no mixup with seed 0 in this project.
 ![Alt text](images/A.PNG)
 ![Alt text](images/B.PNG)
 ![Alt text](images/C.PNG)
