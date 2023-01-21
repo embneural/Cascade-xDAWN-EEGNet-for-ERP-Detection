@@ -95,7 +95,6 @@ for model_type in model_type_list:
 
         loss_fn        = [FocalLoss(weight.to(device), focal_gamma), 
                         FocalLoss(weight.to(device), 0)]
-        # optimizer      = torch.optim.Adam(model.parameters(),lr = lr, weight_decay= weight_decay)  ##使用Adam优化器
         optimizer      = torch.optim.RAdam(model.parameters(),lr = lr, weight_decay= weight_decay)  ##使用Adam优化器        
         scheduler      = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma = 1); 
         optimizer = [optimizer]; scheduler = [scheduler]
