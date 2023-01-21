@@ -321,7 +321,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
 
 Note
 
-In the original papers (EEGNet, Improved EEGNet and DeepConvNet), the authors did not provide the results of P300 detection. I implemented them and run those models to get the P300 detection results in BCI competitions II and III. The number of xdawn spatial filters of Improved EEGNet in this table was chosen to be 8.
+In the original papers (EEGNet, Improved EEGNet and DeepConvNet), the authors did not provide the results of P300 detection. I implemented them and ran those models to get the P300 detection results in BCI competitions II and III. The results of EEGNet, Improved EEGNet and DeepConvNet presented in this table were run with mixup 0.3 and no fixed seeds. The number of xdawn spatial filters of Improved EEGNet in this table was chosen to be 8.
 
 
 
