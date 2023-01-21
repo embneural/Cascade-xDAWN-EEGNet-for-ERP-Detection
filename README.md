@@ -321,13 +321,13 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
 
 Note
 
-In the original papers (EEGNet, Improved EEGNet and DeepConvNet), the authors did not provide the results of P300 detection. I implemented them and ran those models to get the P300 detection results in BCI competitions II and III. The results of EEGNet, Improved EEGNet and DeepConvNet presented in this table were run with mixup 0.3 and no fixed seeds. The number of xdawn spatial filters of Improved EEGNet in this table was chosen to be 8.
+In the original papers (EEGNet, Improved EEGNet and DeepConvNet), the authors did not provide the results of P300 detection. I implemented them and ran those models to get the P300 detection results in BCI competitions II and III. The results ([in folder](result/without_fixed_seed)) of EEGNet, Improved EEGNet and DeepConvNet presented in this table were run **without fixed seeds**. The number of xdawn spatial filters of Improved EEGNet in this table was chosen to be 8.
 
 
 
 
 ### Effect of xdawn number on ASUR
-Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet. Note, the results of the figure below were obtained without a fixed random seed.
+Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet. Note, the results of the figure below were obtained **without fixed seed**.
 ![Xdawn + EEGNet](result/without_fixed_seed/Improved%20EEGNet/cat.png)
 
 
@@ -335,13 +335,7 @@ Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.
 ## Further reading
 The softmax with temperature $t$ was used to get the probability of the model's output logits in this project. The larger $t$ is, the lower the confidence level of the model and the smoother the output.
 $$p_{i} = \frac{exp(z_{i}/t)}{\sum_{j}{exp(z_{j}/t)}}$$
-To show the effect of temperature to the symbol accuarcy, the Improved EEGNet(with 8 xdawn spatial filters) was run on dataset II-A, II-B and IIb and the reuslts were placed in [folder](/result/with_fixed_seed_0/).
-### Dataset II-A
-![Alt text](result/with_fixed_seed_0/mixup_False/A.PNG)
-### Dataset II-B
-![Alt text](result/with_fixed_seed_0/mixup_False/B.PNG)
-### Dataset IIb
-![Alt text](result/with_fixed_seed_0/mixup_False/C.PNG)
+To show the effect of temperature to the symbol accuarcy, the Improved EEGNet(with 8 xdawn spatial filters) was run with **fixed seed 0** on dataset II-A, II-B and IIb and the results were placed in [folder](/result/with_fixed_seed_0/).
 
 <!-- LICENSE -->
 ## License

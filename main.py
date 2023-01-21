@@ -34,7 +34,6 @@ btype= 'lowpass'
 forward_backward = True
 cheby_f = Chebyshev(order, ripple, critical_freq, btype, BCI_II_III.sfreq, forward_backward)
 
-seed = 0
 epoch_len = 0.8; detrend = 1; baseline = None; my_filter = ['my', cheby_f]; downsample = 2;
 nm_type = 'z-score'; sampler = 'uniform'; batch_size = 64; device = 'cuda'
 focal_gamma = 2; lr = 1e-3; weight_decay = 0
@@ -42,11 +41,10 @@ focal_gamma = 2; lr = 1e-3; weight_decay = 0
 early_type = 'loss';  patience = 20; max_epoch = 80;
 event_dict = BCI_II_III.event_dict
 save_path = None
-mixup = [False, 0] # [True, 0.2], [True, 0.3], [True, 0.4]
-model_type_list = [  
-                    'xdawn_8_eegnet', 'xdawn_8_deepconvnet', 
-                    # 'eegnet', 'deepconvnet',
-                    ]
+
+seed = 0
+mixup = [False, 0]  #[True, 0.2], [True, 0.3], [True, 0.4]
+model_type_list = ['xdawn_8_eegnet'] # 'eegnet','deepconvnet'
 
 for model_type in model_type_list:
     if 'xdawn' in model_type:
