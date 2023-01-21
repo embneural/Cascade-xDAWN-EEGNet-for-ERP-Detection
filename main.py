@@ -42,7 +42,7 @@ early_type = 'loss';  patience = 20; max_epoch = 80;
 event_dict = BCI_II_III.event_dict
 save_path = None
 
-# seed = 0 # this seed is fixed
+# seed = 0
 mixup = [False, 0]  #[True, 0.2], [True, 0.3], [True, 0.4]
 model_type_list = ['xdawn_8_eegnet'] # 'eegnet','deepconvnet'
 
