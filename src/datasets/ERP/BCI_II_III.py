@@ -461,7 +461,7 @@ class BCI_II_III_Training(Training):
                 correct_recgonize = self.get_recognized_symbols(max_repetition, number, output , stimul_code, label)
                 symbol_list.append(correct_recgonize)
             
-            max_idx =  2  # with a higher temperature or just adopt logits, the symbol acc will be a liiter more stable
+            max_idx = np.int32(2)# # with a higher temperature or just adopt logits, the symbol acc will be a liiter more stable
             results = symbol_list[max_idx]
             
             return symbol_list, results

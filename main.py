@@ -56,7 +56,7 @@ for model_type in model_type_list:
     else:
         use_xdawn =  False
 
-    for s_id in ['B', 'A', 'C']:
+    for s_id in ['B', 'A', 'C']:        
         '''
         Preprocessing
         '''
