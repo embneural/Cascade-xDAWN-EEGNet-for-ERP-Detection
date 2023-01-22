@@ -451,7 +451,7 @@ class BCI_II_III_Training(Training):
                 r_stack = np.concatenate((r_stack, result), axis = 0)
 
             symbol_list = []
-            self._range = ['logits', 1, 10]
+            self._range = ['logits', 1, 10] # temperature
             for t in self._range:
                 if t != 'logits':
                     output = softmax(r_stack/t,axis = -1)
@@ -461,7 +461,7 @@ class BCI_II_III_Training(Training):
                 correct_recgonize = self.get_recognized_symbols(max_repetition, number, output , stimul_code, label)
                 symbol_list.append(correct_recgonize)
             
-            max_idx = np.argmax( np.array(symbol_list).sum(axis = -1))
+            max_idx = np.array(2)  # with a higher temperature or just adopt logits, the symbol acc will be a liiter more stable
             results = symbol_list[max_idx]
             
             return symbol_list, results
