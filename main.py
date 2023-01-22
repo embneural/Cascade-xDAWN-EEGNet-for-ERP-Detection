@@ -14,8 +14,11 @@ import torch
 chage src_path and root.
 root is the path of the location of the datasets 
 '''
-src_path = 'H:\wzh\p300_new\mycode\P300_detection'
-root = 'H:\\wzh\\p300_new\\dataset\\BCI IIb & III'
+# src_path = 'H:\wzh\p300_new\mycode\P300_detection'
+# root = 'H:\\wzh\\p300_new\\dataset\\BCI IIb & III'
+
+src_path = 'F:\\lab-code-backup-master\\P300_detection\\SOTA-of-P300-Detection-in-BCI-Competitions-II-III\\src'
+root = 'F:\\zhendianyuanzi_linux\\dataset\\p300'
 sys.path.insert(0, src_path)
 #%%
 from src.datasets.ERP import BCI_II_III
@@ -53,13 +56,13 @@ for model_type in model_type_list:
     else:
         use_xdawn =  False
 
-    for s_id in ['A', 'B', 'C']:
+    for s_id in ['B', 'A', 'C']:
         '''
         Preprocessing
         '''
         name = {'A':'III', 'B':'III','C': 'IIb'}
         path = os.path.join(root, name[s_id])
-        if s_id == 'A' or s_id == 'B':
+        if s_id == 'B' or s_id == 'A':
             train_raw, train_code,  train_label = BCI_II_III.get_data_III(s_id, 'train', path)
             valid_raw, valid_code,  valid_label = BCI_II_III.get_data_III(s_id, 'test',  path)
         elif s_id == 'C':
