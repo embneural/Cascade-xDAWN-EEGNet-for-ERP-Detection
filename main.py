@@ -41,7 +41,7 @@ epoch_len = 0.8; detrend = 1; baseline = None; my_filter = ['my', cheby_f]; down
 nm_type = 'z-score'; sampler = 'uniform'; batch_size = 64; device = 'cuda'
 focal_gamma = 2; lr = 1e-3; weight_decay = 0
 
-early_type = 'loss';  patience = 20; max_epoch = 80;
+early_type = 'loss';  max_epoch = 80; patience = max_epoch;
 event_dict = BCI_II_III.event_dict
 save_path = None
 
