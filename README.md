@@ -132,7 +132,7 @@ This project aims to provide a simple general framework to help beginners who ar
 ## Methods
 1. **ESVMs**. Paper link: [P300 Detection using Ensemble of SVM for
 Brain-Computer Interface Application](http://dspace.nitrkl.ac.in:8080/dspace/bitstream/2080/3022/1/2018_ICCNT_SKundu_P300.pdf).
-2. **CNN-1** and MCNN-1. Paper link: [Convolutional neural networks for P300 detection with application to brain-computer interfaces](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
+2. **CNN-1** and **MCNN-1**. Paper link: [Convolutional neural networks for P300 detection with application to brain-computer interfaces](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
 3. **OLCNN**. Paper link: [A Simple Convolutional Neural Network
 for Accurate P300 Detection and Character Spelling
 in Brain Computer Interface](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
@@ -274,7 +274,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>66.2</td>
     <td>78.5</td>
     <td>84.3</td>
-    <td>29.6</td>
+    <th>29.6</th>
     <th>30.3</th>
     <th>30.5</th>
   </tr>
@@ -286,7 +286,7 @@ For more information about the $\text{ASUR}$, please refer to [ST-CapsNet: Linki
     <td>63.8</td>
     <td>78.2</td>
     <td>84.4</td>
-    <th>29.8</th>
+    <td>28.6</td>
     <td>29.8</td>
     <td>30.2</td>
   </tr>
