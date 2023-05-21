@@ -155,7 +155,8 @@ Networks for EEG Decoding and Visualization](https://onlinelibrary.wiley.com/doi
 $\text{ASUR}$ (i.e., average symbols under repetitions) was adopted to compare symbol accuracy. 
 $$p_{i} = \frac{exp(z_{i}/t)}{\sum_{j}{exp(z_{j}/t)}}$$
 $$\text{ASUR}_{k} = \frac{1}{k} \sum_{i=1}^{k}{C_i}$$
-$$ ASUR_{K} = \frac{exp(z_{i}/t)}{\sum_{j}{exp(z_{j}/t)}}$$
+
+$$ ASUR_k = \frac{1}{k} {\sum_{i=1}{C_i}} $$
 
 
 where $C_i$ means the correctly recognized symbols in the $i$-th
