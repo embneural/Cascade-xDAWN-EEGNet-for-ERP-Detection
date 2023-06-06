@@ -327,7 +327,7 @@ In the original papers (EEGNet, Improved EEGNet and DeepConvNet), the authors di
 
 
 ### Effect of xdawn number on ASUR
-Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet. Note, the results of the figure below were obtained **without fixed seed**.
+Using [Improved EEGNet](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007), i.e. xdawn with EEGNet. Note, the results of the figure below were obtained without fixed seed.
 ![Xdawn + EEGNet](result/without_fixed_seed/Improved%20EEGNet/cat.png)
 
 
