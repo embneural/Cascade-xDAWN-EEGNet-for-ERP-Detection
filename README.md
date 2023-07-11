@@ -345,7 +345,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 ## Citation
-DeepConvNet and EEGNet are enough good for single trial RSVP detection
+DeepConvNet and EEGNet are good enough
 ```sh
 @article{wang2023review,
   title={A review of deep learning methods for cross-subject rapid serial visual presentation detection in World Robot Contest 2022},
