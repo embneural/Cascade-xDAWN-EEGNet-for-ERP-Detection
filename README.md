@@ -344,7 +344,20 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 ## Citation
-For Improved EEGNet model:
+DeepConvNet and EEGNet are enough good for single trial RSVP detection
+```sh
+@article{wang2023review,
+  title={A review of deep learning methods for cross-subject rapid serial visual presentation detection in World Robot Contest 2022},
+  author={Wang, Zehui and Zhang, Hongfei and Ji, Zhouyu and Yang, Yuliang and Wang, Hongtao},
+  journal={Brain},
+  volume={9},
+  number={2},
+  pages={78--94},
+  year={2023}
+}
+```
+
+Improved EEGNet model:
 ```sh
 @article{zhang2022improved,
   title={An improved EEGNet for single-trial EEG classification in rapid serial visual presentation task},
@@ -357,7 +370,7 @@ For Improved EEGNet model:
   publisher={SAGE Publications Sage UK: London, England}
 }
 ```
-For new comparison metric: $\text{ASUR}$
+New comparison metric: $\text{ASUR}$
 ```sh
 @ARTICLE{10018278,
   author={Wang, Zehui and Chen, Chuangquan and Li, Junhua and Wan, Feng and Sun, Yu and Wang, Hongtao},
