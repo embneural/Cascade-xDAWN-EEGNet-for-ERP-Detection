@@ -147,7 +147,8 @@ for EEG-based Brain-Computer Interfaces](https://arxiv.org/pdf/1611.08024.pdf).
 ](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007).
 10. **DeepConvNet**.  link: [Deep Learning With Convolutional Neural
 Networks for EEG Decoding and Visualization](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.23730).
-11. **DeepConvNet and EEGNet are good enough**. link:[https://www.researchgate.net/profile/Hongtao-Wang-16/publication/371782540_A_Review_of_Deep_Learning_Methods_for_Cross-subject_Rapid_Serial_Visual_Presentation_Detection_in_World_Robot_Contest_2022/links/649e47af8de7ed28ba64b37c/A-Review-of-Deep-Learning-Methods-for-Cross-subject-Rapid-Serial-Visual-Presentation-Detection-in-World-Robot-Contest-2022.pdf]
+11. **DeepConvNet and EEGNet are good enough**. link: [A review of deep learning methods for cross‐subject rapid serial
+visual presentation detection in World Robot Contest 2022](https://www.researchgate.net/profile/Hongtao-Wang-16/publication/371782540_A_Review_of_Deep_Learning_Methods_for_Cross-subject_Rapid_Serial_Visual_Presentation_Detection_in_World_Robot_Contest_2022/links/649e47af8de7ed28ba64b37c/A-Review-of-Deep-Learning-Methods-for-Cross-subject-Rapid-Serial-Visual-Presentation-Detection-in-World-Robot-Contest-2022.pdf)
 
 <!-- CONTRIBUTING -->
 ## Results
