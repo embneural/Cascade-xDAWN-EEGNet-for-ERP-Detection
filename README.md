@@ -130,24 +130,24 @@ This project aims to provide a simple general framework to help beginners who ar
 
 
 ## Methods
-1. **ESVMs**. Paper link: [P300 Detection using Ensemble of SVM for
+1. **ESVMs**. link: [P300 Detection using Ensemble of SVM for
 Brain-Computer Interface Application](http://dspace.nitrkl.ac.in:8080/dspace/bitstream/2080/3022/1/2018_ICCNT_SKundu_P300.pdf).
-2. **CNN-1** and **MCNN-1**. Paper link: [Convolutional neural networks for P300 detection with application to brain-computer interfaces](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
-3. **OLCNN**. Paper link: [A Simple Convolutional Neural Network
+2. **CNN-1** and **MCNN-1**.  link: [Convolutional neural networks for P300 detection with application to brain-computer interfaces](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
+3. **OLCNN**.  link: [A Simple Convolutional Neural Network
 for Accurate P300 Detection and Character Spelling
 in Brain Computer Interface](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
-4. **BN3**. Paper link: [Deep learning based on batch normalization for P300 signal detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231217314601).
-5. **ERP-CaspNet**. Paper link: [Capsule network for ERP detection in brain-computer interface](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9393395).
-6. **MsCNN-TL-ESVM**. Paper link: [MsCNN: A Deep Learning Framework for P300
+4. **BN3**. link: [Deep learning based on batch normalization for P300 signal detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231217314601).
+5. **ERP-CaspNet**.  link: [Capsule network for ERP detection in brain-computer interface](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9393395).
+6. **MsCNN-TL-ESVM**.  link: [MsCNN: A Deep Learning Framework for P300
 Based Brain-Computer Interface Speller](https://www.researchgate.net/profile/Sourav-Kundu-4/publication/345380593_MsCNN_A_Deep_Learning_Framework_for_P300-Based_Brain-Computer_Interface_Speller/links/60f955f1169a1a0103ab8381/MsCNN-A-Deep-Learning-Framework-for-P300-Based-Brain-Computer-Interface-Speller.pdf).
-7. **ST-CaspNet**. Paper link: [ST-CapsNet: Linking Spatial and Temporal Attention with Capsule Network for P300 Detection Improvement](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10018278).
-8. **EEGNet**. Paper link: [EEGNet: A Compact Convolutional Neural Network
+7. **ST-CaspNet**.  link: [ST-CapsNet: Linking Spatial and Temporal Attention with Capsule Network for P300 Detection Improvement](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10018278).
+8. **EEGNet**.  link: [EEGNet: A Compact Convolutional Neural Network
 for EEG-based Brain-Computer Interfaces](https://arxiv.org/pdf/1611.08024.pdf).
-9. **Improved EEGNet**. Paper link:[An improved EEGNet for single-trial EEG classification in rapid serial visual presentation task
+9. **Improved EEGNet**.  link:[An improved EEGNet for single-trial EEG classification in rapid serial visual presentation task
 ](https://journals.sagepub.com/doi/full/10.26599/BSA.2022.9050007).
-10. **DeepConvNet**. Paper link: [Deep Learning With Convolutional Neural
+10. **DeepConvNet**.  link: [Deep Learning With Convolutional Neural
 Networks for EEG Decoding and Visualization](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.23730).
-
+11. **DeepConvNet and EEGNet are good enough**. link:[https://www.researchgate.net/profile/Hongtao-Wang-16/publication/371782540_A_Review_of_Deep_Learning_Methods_for_Cross-subject_Rapid_Serial_Visual_Presentation_Detection_in_World_Robot_Contest_2022/links/649e47af8de7ed28ba64b37c/A-Review-of-Deep-Learning-Methods-for-Cross-subject-Rapid-Serial-Visual-Presentation-Detection-in-World-Robot-Contest-2022.pdf]
 
 <!-- CONTRIBUTING -->
 ## Results
