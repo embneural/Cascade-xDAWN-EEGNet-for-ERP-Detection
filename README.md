@@ -135,7 +135,7 @@ Brain-Computer Interface Application](http://dspace.nitrkl.ac.in:8080/dspace/bit
 2. **CNN-1** and **MCNN-1**.  link: [Convolutional neural networks for P300 detection with application to brain-computer interfaces](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
 3. **OLCNN**.  link: [A Simple Convolutional Neural Network
 for Accurate P300 Detection and Character Spelling
-in Brain Computer Interface](https://liacs.leidenuniv.nl/~stefanovtp/pdf/IJCAI_18.pdf).
+in Brain Computer Interface](https://www.ijcai.org/Proceedings/2018/0222.pdf).
 4. **BN3**. link: [Deep learning based on batch normalization for P300 signal detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231217314601).
 5. **ERP-CaspNet**.  link: [Capsule network for ERP detection in brain-computer interface](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9393395).
 6. **MsCNN-TL-ESVM**.  link: [MsCNN: A Deep Learning Framework for P300
